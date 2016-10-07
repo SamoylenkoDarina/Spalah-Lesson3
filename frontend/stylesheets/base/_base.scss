@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	color: $colorText;
+	font-size: $bodyFontSize;
+	line-height: 1.2em;
+	font-family: 'Conv_Roboto-Light[1]';
+	background: $bodyBg;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+strong {
+	font-family: 'Conv_Roboto-Bold[1]';
+}

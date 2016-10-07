@@ -1,0 +1,3 @@
+@function calcFontSize ($fontSize) {
+	@return #{$fontSize / $bodyFontSize}em
+}

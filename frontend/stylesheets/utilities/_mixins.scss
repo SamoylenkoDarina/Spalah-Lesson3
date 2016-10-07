@@ -1,0 +1,29 @@
+@mixin headerButtons ($width, $marginLeft, $textAlign, $backgroundColor) {
+	width: $width;
+	margin-left: $marginLeft;
+	text-align: $textAlign;
+	background-color: $backgroundColor;
+	border-radius: $borderRadius;
+}
+
+@mixin size($width, $height){
+  width: $width;
+  height: $height;
+}
+
+@mixin positioning ($direction, $offset, $right, $width, $height, $url) {
+	@include size($width, $height);
+	@include directionOffset ($direction, $offset);
+	content: "";
+	right: $right;
+	background: url($url) no-repeat;
+	position: absolute;
+}
+
+@mixin directionOffset ($direction, $offset) {
+	@if $direction == 'up' {
+		bottom: $offset;
+	} @else if $direction == 'down' {
+		top: $offset;
+	}
+}

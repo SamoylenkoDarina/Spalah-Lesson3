@@ -1,0 +1,61 @@
+.share {
+	width: 100%;
+	max-width: 1360px;
+	padding: 80px;
+	display: flex;
+	justify-content: space-around;
+	&__socials {
+		width: 400px;
+		margin: 80px 0 0 0;
+		display: flex;
+		flex-direction: column;
+	}
+	&__link {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		.share-button {
+			position: relative;
+			width: 280px;
+			height: 80px;
+			margin: 0 0 80px 0;
+			padding: 22px 7px 0 77px;
+			display: block;
+			color: #fff;
+			font-size: calcFontSize(14px);
+			text-transform: uppercase;
+			border-radius: $borderRadius;
+		}
+		.share-button:before {
+			content: "";
+			position: absolute;
+			top: 19px;
+			left: 20px;
+			width: 40px;
+			height: 40px;
+			background: url('../frontend/images/socials-sprite.png') 0 0 no-repeat;
+		}
+	}
+	&__facebook {
+		background-color: #3a5795;
+	}
+	&__google {
+		background-color: #d34836;
+	}
+	.share__google:before {
+		background-position: -40px 0;
+	}
+	&__vk {
+		background-color: #5c82ab;
+	}
+	.share__vk:before {
+		background-position: -80px 0;
+	}
+	&__text {
+		width: 480px;
+	}
+	&__link-p {
+		font-size: calcFontSize(24px);
+		margin: 29px 0 0 0;
+	}
+}		

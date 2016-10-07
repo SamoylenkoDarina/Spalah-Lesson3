@@ -1,0 +1,23 @@
+.holder {
+	width: 100%;
+	max-width: 1200px;	
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.text {
+	position: relative;
+	padding: 13px 0 0 0;
+	letter-spacing: 2.4px;
+	font: 1.5em/1.5em 'Conv_Roboto-Light[1]';
+	text-transform: uppercase;
+}
+.text:before {
+	content: "";
+	top: 0;
+	left: 0;
+	background: url('../frontend/images/separator.png') no-repeat;
+	position: absolute;
+	width: 40px;
+	height: 3px;
+}
