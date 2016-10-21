@@ -7,7 +7,7 @@ body {
 	color: $colorText;
 	font-size: $bodyFontSize;
 	line-height: 1.2em;
-	font-family: 'Conv_Roboto-Light[1]';
+	font-family: 'Lato-Regular';
 	background: $bodyBg;
 }
 a {
@@ -15,5 +15,8 @@ a {
 	color: #000;
 }
 strong {
-	font-family: 'Conv_Roboto-Bold[1]';
+	font-family: 'Lato-Bold';
+}
+li {
+	list-style: none;
 }

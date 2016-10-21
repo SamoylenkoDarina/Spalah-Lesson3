@@ -1,37 +1,87 @@
-.header {	
+.header {
 	width: 100%;
-	background: $bgColor; 
-	&__logo-link {
-		display: block;
-		width: 136px;
-		height: 33px;
-		background: url('../frontend/images/logo.png') no-repeat;
-		text-indent: -9999px;
+	height: 120px;
+	background-color: $bgColor;
+	&__logo {
+		width: 148px;
+		margin-left: -3px;
+		font-size: calcFontSize(50px);
+		line-height: 2.16em;
+		font-family: 'Lato-Black';
+		letter-spacing: 0.4px;
+	}
+	&__logo-text-blue {
+		font-family: 'Lato-Regular';
+		color: $colorLink;
 	}
 	&__nav {
-		position: relative;
-		display: flex;
-		font: $linkText;
-		.header__nav-link {
-			height: 30px;
-			margin: 3px 0 0 35px;
-		}
-		.sign-up {
-			@include headerButtons (193px, 42px, center, #f7cb00)
-		}
-		.sign-in {
-			@include headerButtons (75px, 10px, center, $linkBgColor)
-			color: #fff;
-		}
+		width: 643px;
+		margin: 36px 8px 0 0;
 	}
-	&__nav:after {
+	&__nav-links {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__nav-item {
+		display: inline-block;
+		text-transform: uppercase;
+		padding: 10px 10px 13px 10px;
+		border-top: 5px solid transparent;
+		font-size: calcFontSize(13px);
+		letter-spacing: 0.4px;
+	}
+	&__item-dropdown {
+		position: relative;
+	}
+	&__nav-item-marker {
+		padding-right: 25px;
+	}
+	&__nav-item-marker:after {
 		content: "";
-		width: 80px;
-		height: 240px;
+		width: 7px;
+		height: 5px;
 		position: absolute;
-		top: -77px;
-		left: -84px;
-		background: url('../frontend/images/whistle.png') no-repeat;
-		z-index: 1;
+		top: 20px;
+		right: 10px;
+		background: url(../images/marker.png) no-repeat;
+	}
+	&__nav-item:active,
+	&__nav-item:hover {
+		background-color: #fff;
+		border-top: 5px solid #2aacc8;
+		color: $colorLink;
+	}
+	&__dropdown {
+		display: block;
+		position: absolute;
+		width: 197px;
+		left: -1px;
+		top: 42px;
+		padding: 16px 5px 12px 5px;
+		text-transform: none;
+		background-color: #fff;
+		border: 1px solid #e8ebf1;
+		border-top: 0;
+		border-bottom: 5px solid #2aacc8;
+		z-index: 5;
+	}
+	&__dropdown :first-child {
+		padding-top: 0;
+	}
+	&__dropdown :last-child {
+		border-bottom: 0;
+	}
+	&__dropdown-li {
+		padding: 7px 0 10px 10px;
+		font-size: calcFontSize(13px);
+		border-bottom: 1px solid #e8ebf1;
+	}
+	&__blue-link:hover {
+		color: $colorLink;
+	}
+	&__nav-item__hover {
+		color: $colorLink;
+		background-color: #fff;
+		border-top: 5px solid #2aacc8;
 	}
 }

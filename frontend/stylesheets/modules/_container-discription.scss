@@ -1,0 +1,49 @@
+.container-discription {
+	width: 100%;
+	&__test {
+		width: 48%;
+	}
+	&__h2-img6 {
+		background: url(../images/img6.png) no-repeat;
+	}
+	&__h2-img7 {
+		background: url(../images/img7.png) no-repeat;
+	}
+	&__p {
+		width: 88.75%;
+		color: #363636;
+		font-size: calcFontSize(14px);
+		line-height: 24px;
+		letter-spacing: 0.1px;
+	}
+	&__p-italic {
+		font-family: 'Lato-Bold';
+		font-style: italic;
+	}
+	&__clients {
+		width: 48%;
+	}
+	&__clients-block {
+		display: flex;
+		flex-direction: column;
+	}
+	&__clients-top,
+	&__clients-bottom {
+		display: flex;
+		flex-direction: row;
+	}
+	&__client {
+		width: 160px;
+		height: 100px;
+		border: 1px solid #e8ebf1;
+		position: relative;
+		box-shadow: inset 0px 0px 5px 3px rgba(246,247,249,1);
+	}
+	&__img {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

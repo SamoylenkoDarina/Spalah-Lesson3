@@ -1,151 +1,38 @@
-.swiper-container {
-	height: 640px !important;
-	margin: 0 auto 80px !important;
-	background-color: #f7f1f1;
-}
-.swiper-wrapper {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	position: relative;
-}
-.swiper-text { 
-	position: absolute;
-	top: 48px;
-	left: 157px;
-}
-.swiper-scrollbar-drag {
-	width: 360px !important;
-	background-color: #f7cb00 !important;
-}
+.slider {
+	background-color: #81e4ed;
+	padding: 20px 0 0 0;
+	background: #7db9e8;
+	background: -webkit-linear-gradient(#7db9e8 0, #81e4ed 3px);
+	background: -o-linear-gradient(#7db9e8 0, #81e4ed 3px);
+	background: linear-gradient(#7db9e8 0, #81e4ed 3px); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#81e4ed',GradientType=0 );
+	&__img {
+		display: block;
+		width: 100%;
+	}
+	&__text-box {
+		position: absolute;
+		top: 92px;
+		left: 62px;
+		font-size: calcFontSize(50px);
+		line-height: 60px;
+		font-family: 'Lato-Bold';
+		color: #fff;
+		width: 300px;
+	}
+}				
 .swiper-slide {
 	position: relative;
+	padding: 0 0 40px 0;
 }
-.slide1 {
-	width: 458px;
-	margin: 0 0 0 2px;
+.swiper-pagination-bullets {
+	bottom: 11px !important;
 }
-.slide2 {
-	width: 602px;
+.swiper-pagination-bullet {
+	width: 14px;
+	height: 14px;
+	margin: 0 9px !important;
 }
-.slide3 {
-	width: 696px;
-}
-.slide4 {
-	width: 452px;
-}
-.slide5 {
-	width: 626px;
-}
-.slide6 {
-	width: 760px;
-}
-.slide7 {
-	width: 425px;
-	padding: 240px 0 0 0;
-}
-.slide-img {
-	position: absolute;
-	z-index: 1;
-}
-.text-box {
-	display: block;
-	position: absolute;
-	padding: 12px 20px 18px;
-	color: #fff;
-	font-size: calcFontSize(12px);
-	line-height: 1.5em;
-	background-color: #0d221b;
-	border-radius: 3px;
-}
-.text-box:before {
-	content: "";
-	width: 5px;
-	height: 5px;
-	position: absolute;
-	bottom: -9px;
-	left: -10px;
-	background: url(../frontend/images/dot.png) no-repeat;
-}
-.text-box1 {
-	top: 31.3%;
-	left: 77.6%;
-	width: 160px;
-}
-.text-box1:after {
-	@include positioning ('up', 10px, 9px, 21px, 21px, '../frontend/images/text-box-after1.png');
-}
-.text-box2 {
-	top: 18.6%;
-	left: 46%;
-	width: 260px;
-}
-.text-box2:after {
-	@include positioning ('up', 10px, 9px, 21px, 21px, '../frontend/images/text-box-after2.png');
-}
-.text-box3 {
-	top: 74.2%;
-	left: -185px;
-	width: 180px;
-}
-.text-box3:before {
-	content: "";
-	top: -7px;
-	left: 185px;
-}
-.text-box3:after {
-	@include positioning ('up', 10px, 9px, 21px, 21px, '../frontend/images/text-box-after3.png');
-}
-.text-box4 {
-	top: 109px;
-	right: 91px;
-	width: 180px;
-}
-.text-box4:after {
-	@include positioning ('up', 10px, 9px, 21px, 21px, '../frontend/images/text-box-after4.png');
-}
-.text-box5 {
-	bottom: 44px;
-	left: -111px;
-	width: 180px;
-}
-.text-box5:before {
-	content: "";
-	top: -9px;
-	left: 185px;
-}
-.text-box5:after {
-	@include positioning ('up', 10px, 9px, 21px, 21px, '../frontend/images/text-box-after5.png');
-}
-.text-box6 {
-	bottom: 44px;
-	left: -62px;
-	width: 190px;
-}
-.text-box6:before {
-	top: -7px;
-	left: 195px;
-}
-.text-box6:after {
-	@include positioning ('up', 10px, 9px, 21px, 21px, '../frontend/images/text-box-after6.png');
-}
-.text-box7 {
-	top: 80px;
-	right: -40px;
-	width: 260px;
-}
-.text-box7:after {
-	@include positioning ('up', 10px, 9px, 21px, 21px, '../frontend/images/text-box-after7.png');
-}
-.text-box8 {
-	bottom: 76px;
-	left: -90px;
-	width: 260px;
-}
-.text-box8:before {
-	top: 90px;
-	left: 266px;
-}
-.text-box8:after {
-	@include positioning ('up', 10px, 9px, 21px, 21px, '../frontend/images/text-box-after8.png');
+.swiper-pagination-bullet-active {
+	background-color: #fff;
 }
