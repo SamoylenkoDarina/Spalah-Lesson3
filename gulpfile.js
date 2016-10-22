@@ -1,15 +1,17 @@
 'use strict';
 
-var gulp            = require('gulp'),
-    sass            = require('gulp-sass'),
-    sourcemaps      = require('gulp-sourcemaps'),
-    browserSync     = require('browser-sync'),
-    imagemin        = require('gulp-imagemin'),
-    watch           = require('gulp-watch'),
-    autoprefixer    = require('gulp-autoprefixer'),    
-    gulpFilter      = require('gulp-filter'),
-    mainBowerFiles  = require('gulp-main-bower-files'),
-    flatten         = require('gulp-flatten');
+var gulp           = require('gulp'),
+    sass           = require('gulp-sass'),
+    sourcemaps     = require('gulp-sourcemaps'),
+    browserSync    = require('browser-sync').create(),
+    imagemin       = require('gulp-imagemin'),
+    fontmin        = require('gulp-fontmin'),
+    watch          = require('gulp-watch'),
+    autoprefixer   = require('gulp-autoprefixer'),
+    gulpFilter     = require('gulp-filter'),
+    flatten        = require('gulp-flatten'),
+    uglify         = require('gulp-uglifyjs'),
+    mainBowerFiles = require('gulp-main-bower-files');
 
 gulp.task('browser-sync', function() {
     browserSync.init({
@@ -33,17 +35,46 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('image:build', function(){
-    return watch(['./frontend/images/**/*.jpg', './frontend/images/**/*.png', './frontend/images/**/*.svg', './frontend/images/**/*.gif'], function () {
-        gulp.src(['./frontend/images/**/*.jpg', './frontend/images/**/*.png', './frontend/images/**/*.svg', './frontend/images/**/*.gif'])
+gulp.task('image:watch', ['image:build'], function(){
+    return watch([
+        './frontend/images/**/*.jpg',
+        './frontend/images/**/*.png',
+        './frontend/images/**/*.svg',
+        './frontend/images/**/*.gif'], function () {
+        gulp.src([
+            './frontend/images/**/*.jpg',
+            './frontend/images/**/*.png',
+            './frontend/images/**/*.svg',
+            './frontend/images/**/*.gif'
+        ])
             .pipe(imagemin())
             .pipe(gulp.dest('./public/images'));
     });
 });
 
-gulp.task('fonts', function(){
-    return gulp.src(['./frontend/fonts/**/*.eot', './frontend/fonts/**/*.ttf', './frontend/fonts/**/*.otf', './frontend/fonts/**/*.svg', './frontend/fonts/**/*.woff'])
-        .pipe(gulp.dest('./public/fonts'));
+gulp.task('image:build', function(){
+    gulp.src([
+        './frontend/images/**/*.jpg',
+        './frontend/images/**/*.png',
+        './frontend/images/**/*.svg',
+        './frontend/images/**/*.gif'
+    ])
+        .pipe(imagemin())
+        .pipe(gulp.dest('./public/images'));
+});
+
+gulp.task('javascripts:watch', ['javascripts:build'], function(){
+    return watch('./frontend/js/**/*.js', function () {
+        gulp.src('./frontend/js/**/*.js')
+            .pipe(uglify())
+            .pipe(gulp.dest('./public/js'));
+    });
+});
+
+gulp.task('javascripts:build', function(){
+    gulp.src('./frontend/js/**/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('main-bower-files', function() {
@@ -55,4 +86,35 @@ gulp.task('main-bower-files', function() {
         .pipe(gulp.dest('./public/js'));
 });
 
-gulp.task('default', ['browser-sync', 'sass', 'image:build', 'main-bower-files', 'fonts']);
+gulp.task('fonts', function(){
+    return gulp.src('./frontend/fonts/**/*.ttf')
+        .pipe(fontmin())
+        .pipe(gulp.dest('./public/fonts/'));
+
+
+
+    // return gulp.src(['./frontend/fonts/**/*.eot',
+    //     './frontend/fonts/**/*.ttf',
+    //     './frontend/fonts/**/*.otf',
+    //     './frontend/fonts/**/*.svg',
+    //     './frontend/fonts/**/*.woff'])
+    //     .pipe(gulp.dest('./public/fonts'));
+});
+
+gulp.task('main-bower-files', function() {
+    var filterJS = gulpFilter('**/*.js', { restore: true });
+    return gulp.src('./bower.json')
+        .pipe(mainBowerFiles( ))
+        .pipe(filterJS)
+        .pipe(flatten())
+        .pipe(gulp.dest('./public/js'));
+});
+
+gulp.task('default', [
+    'browser-sync', 
+    'sass', 
+    'image:watch',
+    'main-bower-files',
+    'javascripts:build',
+    'javascripts:watch',
+    'fonts']);

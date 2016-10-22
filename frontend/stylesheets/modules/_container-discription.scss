@@ -1,13 +1,19 @@
 .container-discription {
 	width: 100%;
+	margin-bottom: 39px;
+	&__holder {
+		border-top: 1px solid #dfe1e5;
+	}
 	&__test {
 		width: 48%;
 	}
 	&__h2-img6 {
-		background: url(../images/img6.png) no-repeat;
+		background: url(../images/img6.png) 0 65% no-repeat;
+		padding: 24px 0 12px 39px;
 	}
 	&__h2-img7 {
-		background: url(../images/img7.png) no-repeat;
+		background: url(../images/img7.png) 0 46% no-repeat;
+		padding: 24px 0 18px 39px;
 	}
 	&__p {
 		width: 88.75%;
@@ -17,7 +23,8 @@
 		letter-spacing: 0.1px;
 	}
 	&__p-italic {
-		font-family: 'Lato-Bold';
+		padding: 24px 0 0 0;
+		font-family: 'Lato-Black';
 		font-style: italic;
 	}
 	&__clients {

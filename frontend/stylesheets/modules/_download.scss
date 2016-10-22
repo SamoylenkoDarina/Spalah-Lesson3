@@ -1,0 +1,45 @@
+.download {
+	width: 100%;
+	&__holder{
+		background-color: #e8fcfe;
+		border: 1px solid #81e4ed;
+	}
+	&__text {
+		width: 670px;
+		padding: 30px;
+		color: #363636;
+		font-size: calcFontSize(16px);
+		line-height: 26px;
+		letter-spacing: 0.1px;
+	}
+	&__link {
+		display: block;
+		position: relative;
+		margin: 39px 39px 0 0;
+		padding: 13px 20px 1px 8px;
+		border: 1px solid #2aacc8;
+		border-radius: 5px;
+		background: #94f7ff;
+		background: -webkit-linear-gradient(#94f7ff 0%, #2aacc8 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94f7ff', endColorstr='#2aacc8',GradientType=0 );
+		box-shadow: 0px 2px 3px 0px rgba(185,195,217,0.85);
+	}
+	&__link:hover {
+		background: #94f7ff;
+		background: -webkit-linear-gradient(#2aacc8 0%, #94f7ff 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aacc8', endColorstr='#94f7ff',GradientType=0 );
+
+	}
+	&__link:after {
+		content: "";
+		width: 28px;
+		height: 26px;
+		top: 13px;
+		left: 19px;
+		background: url(../images/download-link.png) no-repeat;
+		position: absolute;
+	}
+	&__h2 {
+		font-size: calcFontSize(18px);
+	}
+}

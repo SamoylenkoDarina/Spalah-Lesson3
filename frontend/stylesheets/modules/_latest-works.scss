@@ -1,5 +1,5 @@
 .latest-works {
-	margin: 19px 0 0 0;
+	margin: 19px 0 37px 0;
 	&__holder {
 		display: flex;
 		flex-direction: column;
@@ -12,9 +12,14 @@
 	}
 	&__blue-img {
 		position: absolute;
-		display: none;
+		display: block;
+		opacity: 0;
 		top: 80px;
 		left: 0;
+		transition: 0.4s linear;
+	}
+	&__blue-img:hover {
+		opacity: 1;
 	}
 }
 .view {
@@ -27,12 +32,9 @@
 	top: 27px;
 	right: 62px;
 }
-.swiper-slide {
+.swiper-container2 .swiper-slide {
 	position: relative;
 	padding-bottom: 0;
-}
-.swiper-slide:hover .latest-works__blue-img {
-	display: block;
 }
 .swiper-container-horizontal {
 	width: 1000px;
