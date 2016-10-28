@@ -10,7 +10,7 @@ var gulp           = require('gulp'),
     autoprefixer   = require('gulp-autoprefixer'),
     gulpFilter     = require('gulp-filter'),
     flatten        = require('gulp-flatten'),
-    uglify         = require('gulp-uglifyjs'),
+    // uglify         = require('gulp-uglifyjs'),
     mainBowerFiles = require('gulp-main-bower-files');
 
 gulp.task('browser-sync', function() {
@@ -66,14 +66,14 @@ gulp.task('image:build', function(){
 gulp.task('javascripts:watch', ['javascripts:build'], function(){
     return watch('./frontend/js/**/*.js', function () {
         gulp.src('./frontend/js/**/*.js')
-            .pipe(uglify())
+            // .pipe(uglify())
             .pipe(gulp.dest('./public/js'));
     });
 });
 
 gulp.task('javascripts:build', function(){
     gulp.src('./frontend/js/**/*.js')
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest('./public/js'));
 });
 

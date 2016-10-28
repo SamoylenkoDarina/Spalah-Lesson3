@@ -3,256 +3,237 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="public/css/index.css">
-	<script type="text/javascript" src="public/js/jquery.js"></script>
-	<script type="text/javascript" src="public/js/swiper.js"></script>
-	<script type="text/javascript" src="public/js/dropdown.js"></script>
+	<link rel="stylesheet" href="public/css/all.css">
+	<script data-main="public/js/index" src="public/js/require.js"></script>
 	<title>BisLite</title>
 </head>
-<body>		
-	<div class="header" id="header">
-		<div class="holder">
-			<div class="header__logo">
-				<a href="#" class="header__logo-link">Bis<span class="header__logo-text-blue">Lite</span></a>
-			</div>
-			<div class="header__nav">
-				<ul class="header__nav-links">
-					<li><a class="header__nav-item" href="#">Home</a></li>
-					<li><a class="header__nav-item" href="#">About Us</a></li>
-					<li class="header__item-dropdown"><a class="header__nav-item header__nav-item-marker" href="#">Services</a>
-						<ul class="header__dropdown">
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Web Design</a></li>
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Wordpress Design</a></li>
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Mobile App Development</a></li>
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Internet Marketing</a></li>
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Social Media Managment</a></li>
-						</ul>
-					</li>
-					<li class="header__item-dropdown"><a class="header__nav-item header__nav-item-marker" href="#">Portfolio</a>
-						<ul class="header__dropdown">
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Web Design</a></li>
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Wordpress Design</a></li>
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Mobile App Development</a></li>
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Internet Marketing</a></li>
-							<li class="header__dropdown-li"><a class="header__blue-link" href="#">Social Media Managment</a></li>
-						</ul>
-					</li>
-					<li><a class="header__nav-item" href="#">Blog</a></li>
-					<li><a class="header__nav-item" href="#">Contact Us</a></li>
-				</ul>
+<body>
+	<div class="wrapper">		
+		<div class="header" id="header">
+			<div class="holder">
+				<div class="header__logo">
+					<a href="#" class="header__logo-link">BisLite</a>
+				</div>
+				<div class="header__nav">
+					<ul class="header__nav-links">
+						<li><a class="header__nav-item" href="#">Home</a></li>
+						<li><a class="header__nav-item" href="#">About Us</a></li>
+						<li class="header__item-dropdown"><a class="header__nav-item header__nav-item-marker" href="#">Services</a>
+							<ul class="header__dropdown">
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Web Design</a></li>
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Wordpress Design</a></li>
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Mobile App Development</a></li>
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Internet Marketing</a></li>
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Social Media Managment</a></li>
+							</ul>
+						</li>
+						<li class="header__item-dropdown"><a class="header__nav-item header__nav-item-marker" href="#">Portfolio</a>
+							<ul class="header__dropdown">
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Web Design</a></li>
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Wordpress Design</a></li>
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Mobile App Development</a></li>
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Internet Marketing</a></li>
+								<li class="header__dropdown-li"><a class="header__blue-link" href="#">Social Media Managment</a></li>
+							</ul>
+						</li>
+						<li><a class="header__nav-item" href="#">Blog</a></li>
+						<li><a class="header__nav-item" href="#">Contact Us</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
+		<section class="main">	
+			<div class="slider">
+				<div class="holder">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1">
+								<img class="slider__img" src="public/images/gallery.png" alt="" />
+								<div class="slider__text-box">We design clean, crisp & memorable icons</div>
+							</div>
+							<div class="swiper-slide slide2">
+								<img class="slider__img" src="public/images/gallery.png" alt="" />
+								<div class="slider__text-box">We design clean, crisp & memorable icons</div>
+							</div>
+							<div class="swiper-slide slide3">
+								<img class="slider__img" src="public/images/gallery.png" alt="" />
+								<div class="slider__text-box">We design clean, crisp & memorable icons</div>
+							</div>
+							<div class="swiper-slide slide4">
+								<img class="slider__img" src="public/images/gallery.png" alt="" />
+								<div class="slider__text-box">We design clean, crisp & memorable icons</div>
+							</div>
+							<div class="swiper-slide slide5">
+								<img class="slider__img" src="public/images/gallery.png" alt="" />
+								<div class="slider__text-box">We design clean, crisp & memorable icons</div>
+							</div>
+						</div>
+					   <!-- Add Pagination -->
+	        			<div class="swiper-pagination"></div>
+	   				</div>
+
+
+				</div>
+			</div>
+			<div class="text-block">
+				<div class="holder">
+				<ul class="text-block__ul">
+						<li class="text-block__box">
+							<h2 class="global-h2 text-block__h2-img1">Clean Theme</h2>
+							<p class="text-block__p">Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi. </p>
+							<a class="text-block__link" href="#">Read More</a>
+						</li>
+						<li class="text-block__box">
+							<h2 class="global-h2 text-block__h2-img2">Responsive Design</h2>
+							<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.</p>
+							<a class="text-block__link" href="#">Read More</a>
+						</li>
+						<li class="text-block__box">
+							<h2 class="global-h2 text-block__h2-img3">Fully layerd PSD</h2>
+							<p class="text-block__p">Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna.</p>
+							<a class="text-block__link" href="#">Read More</a>
+						</li>
+						<li class="text-block__box">
+							<h2 class="global-h2 text-block__h2-img4">Ready for coding</h2>
+							<p class="text-block__p">Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est porta quam, non placerat eros neque porta ante. Fusce quis odio urna.</p>
+							<a class="text-block__link" href="#">Read More</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="latest-works">
+				<div class="holder latest-works__holder">
+					<div class="latest-works__h2-img5 global-h2"><h2>Latest Works</h2></div>	 
+					<div class="swiper-container2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="public/images/img-slide1.png" alt="">
+								<div class="latest-works__blue-img">
+									<img src="public/images/slide-hover.png" alt="">
+									<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
+									<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="public/images/img-slide2.png" alt="">
+								<div class="latest-works__blue-img">
+									<img src="public/images/slide-hover.png" alt="">
+									<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
+									<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="public/images/img-slide3.png" alt="">
+								<div class="latest-works__blue-img">
+									<img src="public/images/slide-hover.png" alt="">
+									<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
+									<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="public/images/img-slide4.png" alt="">
+								<div class="latest-works__blue-img">
+									<img src="public/images/slide-hover.png" alt="">
+									<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
+									<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="public/images/img-slide1.png" alt="">
+								<div class="latest-works__blue-img">
+									<img src="public/images/slide-hover.png" alt="">
+									<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
+									<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="public/images/img-slide3.png" alt="">
+								<div class="latest-works__blue-img">
+									<img src="public/images/slide-hover.png" alt="">
+									<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
+									<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="public/images/img-slide4.png" alt="">
+								<div class="latest-works__blue-img">
+									<img src="public/images/slide-hover.png" alt="">
+									<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
+									<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="public/images/img-slide2.png" alt="">
+								<div class="latest-works__blue-img">
+									<img src="public/images/slide-hover.png" alt="">
+									<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
+									<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div> 
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+			<div class="container-description">
+				<div class="container-description__holder holder">
+					<div class="container-description__test">
+						<h2 class="global-h2 container-description__h2-img6">Testimonails</h2>
+						<p class="container-description__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam commodo aliquam metus, sed iaculis nibh tempus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam nec nisi in nisl euismod fringilla.</p>
+						<p class="container-description__p container-description__p-italic">John Travis, CEO, DomainName.com</p>
+					</div>
+					<div class="container-description__clients">
+						<h2 class="global-h2 container-description__h2-img7">Our Clients</h2>
+						<div class="container-description__clients-block">
+							<div class="container-description__client">
+								<a href="#">
+									<img class="container-description__img" src="public/images/client1.png" alt="">
+								</a>
+							</div>
+							<div class="container-description__client">
+								<a href="#">
+									<img class="container-description__img" src="public/images/client2.png" alt="">
+								</a>
+							</div>
+							<div class="container-description__client">
+								<a href="#">
+									<img class="container-description__img" src="public/images/client3.png" alt="">
+								</a>
+							</div>
+							<div class="container-description__client">
+								<a href="#">
+									<img class="container-description__img" src="public/images/client4.png" alt="">
+								</a>
+							</div>					
+							<div class="container-description__client">
+								<a href="#">
+									<img class="container-description__img" src="public/images/client5.png" alt="">
+								</a>
+							</div>
+							<div class="container-description__client">
+								<a href="#">
+									<img class="container-description__img" src="public/images/client6.png" alt="">
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="download">
+				<div class="download__holder holder">
+					<div class="download__text">
+						<p class="download__p">This is a clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal or client works. So ahead and download this wonderful PSD template! </p>
+					</div>
+					<div class="download__button">
+						<a href="#" class="download__link global-h2">Download PSD</h2></a>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<footer class="footer" id="footer">
+			
+		</footer>
 	</div>
-	<section class="main">	
-		<div class="slider">
-			<div class="holder">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide slide1">
-							<img class="slider__img" src="public/images/gallery.png" alt="" />
-							<div class="slider__text-box">We design clean, crisp & memorable icons</div>
-						</div>
-						<div class="swiper-slide slide2">
-							<img class="slider__img" src="public/images/gallery.png" alt="" />
-							<div class="slider__text-box">We design clean, crisp & memorable icons</div>
-						</div>
-						<div class="swiper-slide slide3">
-							<img class="slider__img" src="public/images/gallery.png" alt="" />
-							<div class="slider__text-box">We design clean, crisp & memorable icons</div>
-						</div>
-						<div class="swiper-slide slide4">
-							<img class="slider__img" src="public/images/gallery.png" alt="" />
-							<div class="slider__text-box">We design clean, crisp & memorable icons</div>
-						</div>
-						<div class="swiper-slide slide5">
-							<img class="slider__img" src="public/images/gallery.png" alt="" />
-							<div class="slider__text-box">We design clean, crisp & memorable icons</div>
-						</div>
-					</div>
-				   <!-- Add Pagination -->
-        			<div class="swiper-pagination"></div>
-   				</div>
-
-		    <!-- Initialize Swiper -->
-    		<script>
-			    var swiper = new Swiper('.swiper-container', {
-			        pagination: '.swiper-pagination',
-			        paginationClickable: true
-			    });
-   			</script>
-
-
-			</div>
-		</div>
-		<div class="text-block">
-			<div class="holder">
-				<div class="text-block__box">
-					<h2 class="global-h2 text-block__h2-img1">Clean Theme</h2>
-					<p class="text-block__p">Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi. </p>
-					<a class="text-block__link" href="#">Read More</a>
-				</div>
-				<div class="text-block__box">
-					<h2 class="global-h2 text-block__h2-img2">Responsive Design</h2>
-					<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.</p>
-					<a class="text-block__link" href="#">Read More</a>
-				</div>
-				<div class="text-block__box">
-					<h2 class="global-h2 text-block__h2-img3">Fully layerd PSD</h2>
-					<p class="text-block__p">Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna.</p>
-					<a class="text-block__link" href="#">Read More</a>
-				</div>
-				<div class="text-block__box">
-					<h2 class="global-h2 text-block__h2-img4">Ready for coding</h2>
-					<p class="text-block__p">Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est porta quam, non placerat eros neque porta ante. Fusce quis odio urna.</p>
-					<a class="text-block__link" href="#">Read More</a>
-				</div>
-			</div>
-		</div>
-		<div class="latest-works">
-			<div class="holder latest-works__holder">
-				<div class="latest-works__h2-img5 global-h2"><h2>Latest Works</h2></div>	 
-				<div class="swiper-container2">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="public/images/img-slide1.png" alt="">
-							<div class="latest-works__blue-img">
-								<img src="public/images/slide-hover.png" alt="">
-								<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
-								<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="public/images/img-slide2.png" alt="">
-							<div class="latest-works__blue-img">
-								<img src="public/images/slide-hover.png" alt="">
-								<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
-								<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="public/images/img-slide3.png" alt="">
-							<div class="latest-works__blue-img">
-								<img src="public/images/slide-hover.png" alt="">
-								<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
-								<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="public/images/img-slide4.png" alt="">
-							<div class="latest-works__blue-img">
-								<img src="public/images/slide-hover.png" alt="">
-								<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
-								<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="public/images/img-slide1.png" alt="">
-							<div class="latest-works__blue-img">
-								<img src="public/images/slide-hover.png" alt="">
-								<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
-								<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="public/images/img-slide3.png" alt="">
-							<div class="latest-works__blue-img">
-								<img src="public/images/slide-hover.png" alt="">
-								<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
-								<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="public/images/img-slide4.png" alt="">
-							<div class="latest-works__blue-img">
-								<img src="public/images/slide-hover.png" alt="">
-								<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
-								<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<img src="public/images/img-slide2.png" alt="">
-							<div class="latest-works__blue-img">
-								<img src="public/images/slide-hover.png" alt="">
-								<a href="#"><img class="view" src="public/images/view.png" alt=""></a>
-								<a href="#"><img class="share" src="public/images/share.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-				</div> 
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-				<script>
-					var swiper = new Swiper('.swiper-container2', {
-				        slidesPerView: 4,
-				        paginationClickable: true,
-				        nextButton: '.swiper-button-next',
-				        prevButton: '.swiper-button-prev',
-				        spaceBetween: 40
-					});
-   				</script>
-			</div>
-		</div>
-		<div class="container-discription">
-			<div class="container-discription__holder holder">
-				<div class="container-discription__test">
-					<h2 class="global-h2 container-discription__h2-img6">Testimonails</h2>
-					<p class="container-discription__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam commodo aliquam metus, sed iaculis nibh tempus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam nec nisi in nisl euismod fringilla.</p>
-					<p class="container-discription__p container-discription__p-italic">John Travis, CEO, DomainName.com</p>
-				</div>
-				<div class="container-discription__clients">
-					<h2 class="global-h2 container-discription__h2-img7">Our Clients</h2>
-					<div class="container-discription__clients-block">
-						<div class="container-discription__clients-top">
-							<a href="#">
-								<div class="container-discription__client">
-									<img class="container-discription__img" src="public/images/client1.png" alt="">
-								</div>
-							</a>
-							<a href="#">
-								<div class="container-discription__client">
-									<img class="container-discription__img" src="public/images/client2.png" alt="">
-								</div>
-							</a>
-							<a href="#">
-								<div class="container-discription__client">
-									<img class="container-discription__img" src="public/images/client3.png" alt="">
-								</div>
-							</a>
-						</div>
-						<div class="container-discription__clients-bottom">
-							<a href="#">
-								<div class="container-discription__client">
-									<img class="container-discription__img" src="public/images/client4.png" alt="">
-								</div>
-							</a>
-							<a href="#">
-								<div class="container-discription__client">
-									<img class="container-discription__img" src="public/images/client5.png" alt="">
-								</div>
-							</a>
-							<a href="#">
-								<div class="container-discription__client">
-									<img class="container-discription__img" src="public/images/client6.png" alt="">
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="download">
-			<div class="download__holder holder">
-				<div class="download__text">
-					<p class="download__p">This is a clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal or client works. So ahead and download this wonderful PSD template! </p>
-				</div>
-				<div class="download__button">
-					<a href="#" class="download__link"><h2 class="download__h2 global-h2">Download PSD</h2></a>
-				</div>
-			</div>
-		</div>	
-	</section>
-	<footer class="footer" id="footer">
-		
-	</footer>
 </body>
 </html>

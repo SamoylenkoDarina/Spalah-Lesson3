@@ -1,4 +1,4 @@
-.container-discription {
+.container-description {
 	width: 100%;
 	margin-bottom: 39px;
 	&__holder {
@@ -32,12 +32,7 @@
 	}
 	&__clients-block {
 		display: flex;
-		flex-direction: column;
-	}
-	&__clients-top,
-	&__clients-bottom {
-		display: flex;
-		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	&__client {
 		width: 160px;
@@ -45,7 +40,7 @@
 		border: 1px solid #e8ebf1;
 		position: relative;
 		box-shadow: inset 0px 0px 5px 3px rgba(246,247,249,1);
-	}
+	} 
 	&__img {
 		display: block;
 		position: absolute;

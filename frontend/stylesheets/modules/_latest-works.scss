@@ -1,5 +1,5 @@
 .latest-works {
-	margin: 19px 0 37px 0;
+	margin: 0 0 37px 0;
 	&__holder {
 		display: flex;
 		flex-direction: column;
@@ -10,16 +10,24 @@
 		background: url(../images/img5.png) no-repeat;
 		border-bottom: 1px solid #dfe1e5;
 	}
+	&__client {
+		display: block;
+	}
 	&__blue-img {
 		position: absolute;
 		display: block;
-		opacity: 0;
-		top: 80px;
+		bottom: -84px;
 		left: 0;
 		transition: 0.4s linear;
 	}
-	&__blue-img:hover {
-		opacity: 1;
+}
+.swiper-container2 .swiper-slide {
+	position: relative;
+	padding-bottom: 0;
+	&:hover{
+		.latest-works__blue-img{
+			bottom: -4px;
+		}
 	}
 }
 .view {
@@ -42,6 +50,7 @@
 }
 .swiper-container2 {
 	margin: 20px 0 0 0 !important;
+	height: 160px;
 }
 .swiper-button-next {
 	background: url(../images/next.png) no-repeat;

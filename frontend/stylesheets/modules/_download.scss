@@ -16,8 +16,9 @@
 		display: block;
 		position: relative;
 		margin: 39px 39px 0 0;
-		padding: 13px 20px 1px 8px;
+		padding: 20px 17px 19px 68px;
 		border: 1px solid #2aacc8;
+		font-size: calcFontSize(18px);
 		border-radius: 5px;
 		background: #94f7ff;
 		background: -webkit-linear-gradient(#94f7ff 0%, #2aacc8 100%);
@@ -34,12 +35,9 @@
 		content: "";
 		width: 28px;
 		height: 26px;
-		top: 13px;
-		left: 19px;
+		top: 14px;
+		left: 18px;
 		background: url(../images/download-link.png) no-repeat;
 		position: absolute;
-	}
-	&__h2 {
-		font-size: calcFontSize(18px);
 	}
 }

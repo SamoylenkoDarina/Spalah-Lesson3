@@ -1,14 +1,13 @@
 .header {
 	width: 100%;
-	height: 120px;
 	background-color: $bgColor;
-	&__logo {
-		width: 148px;
-		margin-left: -3px;
-		font-size: calcFontSize(50px);
-		line-height: 2.16em;
-		font-family: 'Lato-Black';
-		letter-spacing: 0.4px;
+	&__logo-link {
+		display: block;
+		width: 147px;
+		height: 37px;
+		margin: 36px 0 47px 0; 
+		background: url(../images/logo.png) no-repeat;
+		text-indent: -9999px;
 	}
 	&__logo-text-blue {
 		font-family: 'Lato-Regular';
