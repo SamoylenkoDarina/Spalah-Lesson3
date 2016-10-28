@@ -1,0 +1,93 @@
+.footer {
+	width: 100%;
+	padding: 29px 0 42px 0;
+	background-color: $bgColor;
+	border-top: 1px solid #d9d9d9;
+	&__holder {
+		flex-direction: column;
+	}
+	&__top {
+		padding-bottom: 35px;
+	}
+	&__columns {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		color: #363636;
+		font-size: calcFontSize(14px);
+	}
+	&__column1 {
+		width: 240px;
+	}
+	&__column5 {
+		width: 190px;
+	}
+	&__p {
+		line-height: 17px;
+	}
+	&__p-offset {
+		padding: 0 0 16px 0;
+	}
+	&__h2 {
+		padding: 0 0 18px 0;
+		font-size: 1.1em;
+	}
+	&__h2-socials-links {
+		padding-left: 10px; 
+	}
+	&__ul {
+		margin: -14px 0 0 0;
+	}	
+	&__li {
+		line-height: 26px;
+	}
+	&__social-links {
+		height: 109px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+		position: relative;
+	}
+	&__social-link {
+		display: block;
+		width: 50px;
+		height: 50px;
+		text-indent: -9999px;
+		background: url(../images/social-links.png) no-repeat;
+		transition: all 0.4s ease-out;
+		&:hover {transform: scale(1.2);
+		}
+	}
+	&__ball {
+		background-position: -53px 0;
+	}
+	&__p-red {
+		background-position: -106px 0;
+	}
+	&__in {
+		background-position: -1px -50px;
+	}
+	&__skype {
+		background-position: -53px -50px;
+	}
+	&__steam {
+		background-position: -106px -50px;
+	}
+	&__bottom {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		font-size: calcFontSize(13px);
+		color: #363636;
+	}
+	&__logo-link {
+		margin: 2px 0 0 0;
+		display: block;
+		text-indent: -9999px;
+		width: 147px;
+		height: 37px;
+		background: url(../images/logo.png) no-repeat;
+	}
+}

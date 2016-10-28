@@ -1,5 +1,5 @@
 .latest-works {
-	margin: 0 0 37px 0;
+	margin: 0 0 40px 0;
 	&__holder {
 		display: flex;
 		flex-direction: column;
@@ -20,6 +20,20 @@
 		left: 0;
 		transition: 0.4s linear;
 	}
+	&__view {
+		position: absolute;
+		top: 28px;
+		left: 69px;
+		opacity: 0;
+		transition: 1s linear;
+	}
+	&__share {
+		position: absolute;
+		top: 27px;
+		right: 62px;
+		opacity: 0;
+		transition: 1s linear;
+	}
 }
 .swiper-container2 .swiper-slide {
 	position: relative;
@@ -28,17 +42,11 @@
 		.latest-works__blue-img{
 			bottom: -4px;
 		}
+		.latest-works__view,
+		.latest-works__share {
+			opacity: 1;
+		}
 	}
-}
-.view {
-	position: absolute;
-	top: 28px;
-	left: 69px;
-}
-.share {
-	position: absolute;
-	top: 27px;
-	right: 62px;
 }
 .swiper-container2 .swiper-slide {
 	position: relative;

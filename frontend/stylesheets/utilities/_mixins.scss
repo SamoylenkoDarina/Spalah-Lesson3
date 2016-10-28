@@ -11,19 +11,22 @@
   height: $height;
 }
 
-@mixin positioning ($direction, $offset, $right, $width, $height, $url) {
-	@include size($width, $height);
-	@include directionOffset ($direction, $offset);
+@mixin positioning {
+	// @include size($width, $height);
+	// @include directionOffset ($direction, $offset);
 	content: "";
-	right: $right;
-	background: url($url) no-repeat;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	background: url(../images/sprite.png) no-repeat;
 	position: absolute;
 }
 
-@mixin directionOffset ($direction, $offset) {
-	@if $direction == 'up' {
-		bottom: $offset;
-	} @else if $direction == 'down' {
-		top: $offset;
-	}
-}
+// @mixin directionOffset ($direction, $offset) {
+// 	@if $direction == 'up' {
+// 		bottom: $offset;
+// 	} @else if $direction == 'down' {
+// 		top: $offset;
+// 	}
+// }
