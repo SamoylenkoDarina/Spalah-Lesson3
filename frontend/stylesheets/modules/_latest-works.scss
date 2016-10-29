@@ -13,37 +13,16 @@
 	&__client {
 		display: block;
 	}
-	&__blue-img {
-		position: absolute;
-		display: block;
-		bottom: -84px;
-		left: 0;
-		transition: 0.4s linear;
-	}
-	&__view {
-		position: absolute;
-		top: 28px;
-		left: 69px;
-		opacity: 0;
-		transition: 1s linear;
-	}
-	&__share {
-		position: absolute;
-		top: 27px;
-		right: 62px;
-		opacity: 0;
-		transition: 1s linear;
-	}
 }
 .swiper-container2 .swiper-slide {
 	position: relative;
 	padding-bottom: 0;
 	&:hover{
-		.latest-works__blue-img{
+		.blue-img{
 			bottom: -4px;
 		}
-		.latest-works__view,
-		.latest-works__share {
+		.view,
+		.share {
 			opacity: 1;
 		}
 	}

@@ -1,11 +1,12 @@
 .header {
 	width: 100%;
 	background-color: $bgColor;
+	border-bottom: 1px solid #d9d9d9;
 	&__logo-link {
 		display: block;
 		width: 147px;
 		height: 37px;
-		margin: 36px 0 47px 0; 
+		margin: 36px 0 46px 0; 
 		background: url(../images/logo.png) no-repeat;
 		text-indent: -9999px;
 	}

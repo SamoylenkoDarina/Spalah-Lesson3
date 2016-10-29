@@ -1,5 +1,7 @@
-(function(){
-	$( document ).ready(function() {
+requirejs( [
+  'jquery',
+], function( $ ) {
+  $( document ).ready(function() {
 		$('.header__dropdown').hide();
 		$('.header__item-dropdown').on('mouseenter', function(e) {
 			var that = $(this);
@@ -23,4 +25,4 @@
 			});
 		});
 	});
-})();
+});

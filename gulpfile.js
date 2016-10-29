@@ -20,7 +20,7 @@ gulp.task('browser-sync', function() {
         }
     });
     gulp.watch('./frontend/stylesheets/**/*.scss', ['sass']);
-    gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
 gulp.task('sass', function () {
