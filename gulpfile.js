@@ -90,15 +90,6 @@ gulp.task('fonts', function(){
     return gulp.src('./frontend/fonts/**/*.ttf')
         .pipe(fontmin())
         .pipe(gulp.dest('./public/fonts/'));
-
-
-
-    // return gulp.src(['./frontend/fonts/**/*.eot',
-    //     './frontend/fonts/**/*.ttf',
-    //     './frontend/fonts/**/*.otf',
-    //     './frontend/fonts/**/*.svg',
-    //     './frontend/fonts/**/*.woff'])
-    //     .pipe(gulp.dest('./public/fonts'));
 });
 
 gulp.task('main-bower-files', function() {

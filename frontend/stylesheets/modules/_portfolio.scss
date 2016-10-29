@@ -1,6 +1,13 @@
 .portfolio {
 	width: 100%;
 	margin: 38px 0 0 0;
+	.grid {
+			max-width: 1040px !important;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 20px 0 19px 0;
+		}
 	&__column {
 		flex-direction: column;
 	}
@@ -94,15 +101,4 @@
 		text-indent: -9999px;
 		background: url(../images/last-page.png) no-repeat;
 	}
-}
-button.is-checked {
-background-color: red;
-}
-.grid {
-	max-width: 1040px !important;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	// justify-content: space-between !important;
-	padding: 20px 0 19px 0;
 }
